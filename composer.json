@@ -1,9 +1,9 @@
  {
-	"name": "gryzzli/ATomPanda",
+	"name": "gryzzli/atompanda",
 	"type": "framework",
 	"description": "PHP  framework",
 	"keywords": ["lightweight", "PHP framework"],
-	"homepage": "https://medoo.in",
+	"homepage": "",
 	"license": "GNU",
 	"authors": [
 		{"name": "Adam Tomanek", "email": "adam@grzybowice.pl"}
