@@ -1,23 +1,16 @@
- {
-	"name": "gryzzli/atompanda",
-	"type": "framework",
-	"description": "PHP  framework",
-	"keywords": ["lightweight", "PHP framework"],
-	"homepage": "",
-	"license": "GNU",
-	"authors": [
-		{"name": "Adam Tomanek", "email": "adam@grzybowice.pl"}
-	],
-	"require": {
-		"php": ">=5.4",
-		"ext-pdo": "*"
-	},
-	"suggest": {
-
-	},
-	"autoload": {
-		"psr-4": {
-			"ATomPanda\\": "/"
-		}
-	}
+{
+    "name": "gryzzli/atompanda",
+    "description": "PHP Framework",
+    "type": "project",
+    "require": {
+        "catfan/medoo": "^1.4",
+        "smarty/smarty": "^3.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adam Tomanek",
+            "email": "adam@grzybowice.pl"
+        }
+    ]
 }
