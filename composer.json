@@ -1,0 +1,23 @@
+ {
+	"name": "gryzzli/ATomPanda",
+	"type": "framework",
+	"description": "PHP  framework",
+	"keywords": ["lightweight", "PHP framework"],
+	"homepage": "https://medoo.in",
+	"license": "GNU",
+	"authors": [
+		{"name": "Adam Tomanek", "email": "adam@grzybowice.pl"}
+	],
+	"require": {
+		"php": ">=5.4",
+		"ext-pdo": "*"
+	},
+	"suggest": {
+
+	},
+	"autoload": {
+		"psr-4": {
+			"ATomPanda\\": "/"
+		}
+	}
+}
