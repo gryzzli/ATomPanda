@@ -9,7 +9,7 @@ function PandaAutoload($class_name)
 
 	 if(file_exists(CLASS_DIR.'/'.strtolower($class_name) . '.php'))
 	 {
-   	 	require_once CLASS_DIR.'/'.strtolower($class_name) . '.php';
+   	 	//require_once CLASS_DIR.'/'.strtolower($class_name) . '.php';
 	 }
 	 else if(file_exists(CLASS_DIR.'/smarty/'.$class_name . '.php'))
 	 {
