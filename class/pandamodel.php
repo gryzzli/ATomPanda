@@ -9,7 +9,7 @@ class PandaModel
 	{
 
 		//$this->db = getInstance('PandaDatabase');
-                $this->db = getInstance('medoo');
+                $this->db = getInstance('Medoo\Medoo');
               
 		//if($this->table == "") { Panda::Error("Variable \$table is not set"); }
 		//$this->db->order = '';

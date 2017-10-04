@@ -8,7 +8,7 @@ class PandaMedia
 	var $tableAudio = 'PandaMedia_audio';
 	function __construct()
 	{
-		$this->db = getInstance('Medoo');
+		$this->db = getInstance('Medoo\Medoo');
                 $this->description = "Grzybowice.pl ". Date("Y");
 
 	}

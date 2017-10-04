@@ -62,7 +62,7 @@ function getInstance($name,$instance='default',$noinit=0)
                     $params = $GLOBALS['Object'][$name][$instance]['params'];
                 }
                 
-                echo '-'.$name.'-';
+            //    echo '-'.$name.'-';
 		$object = new $name($params);
             }
             else

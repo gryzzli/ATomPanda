@@ -8,7 +8,7 @@ class PandaUserModel
 
 	function __construct()
 	{
-		$this->db = getinstance('Medoo');
+		$this->db = getinstance('Medoo\Medoo');
 		//$this->import();
 	}
 

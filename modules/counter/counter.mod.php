@@ -5,7 +5,7 @@ class CounterMod extends PandaModController
 	function index()
 	{
 
-	        $db = getInstance('medoo');
+	        $db = getInstance('Medoo\Medoo');
 	
 		$id = str_replace("//","/",$_SERVER['REQUEST_URI']);
 

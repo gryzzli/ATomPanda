@@ -1,5 +1,5 @@
 <?php
-define('PANDA_DIR', PROJECT_DIR.'/panda');
+define('PANDA_DIR', PROJECT_DIR.'/vendor/gryzzli/atompanda');
 define('CLASS_DIR', PANDA_DIR.'/class');
 
 
