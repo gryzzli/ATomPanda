@@ -12,6 +12,7 @@ include 'define.php';
 #ini_set('upload_max_filesize',50);
 
 require '../vendor/autoload.php';
+
 include FUNCTIONS_DIR.'/basic.php';
 spl_autoload_register('PandaAutoload');
 

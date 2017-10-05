@@ -12,10 +12,5 @@
             "name": "Adam Tomanek",
             "email": "adam@grzybowice.pl"
         }
-    ],
-	"autoload": {
-		"psr-4": {
-			"ATomPanda\\": "/src"
-		}
-	}
+    ]
 }
