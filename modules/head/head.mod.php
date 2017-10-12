@@ -26,14 +26,14 @@ class HeadMod extends PandaModController
 
 		foreach($this->css as $val)
 		{
-                                $ret .= "\n".'<link rel="stylesheet" href="'.HTTP_BASE_URL.'/layout/css/'.$val.'"  type="text/css"/>'."\n";
+                                $ret .= "\n".'<link rel="stylesheet" href="'.HTTP_BASE_URL.'/'.$val.'"  type="text/css"/>'."\n";
                 }
 
 		foreach($this->java as $val)
 		{
                             if(!Panda::ereg("\/\/", $val))
                             {
-                               $ret .= "\n".'<script type="text/javascript" charset="utf-8" src="'.HTTP_BASE_URL.'/layout/js/'.$val.'"></script>';    
+                               $ret .= "\n".'<script type="text/javascript" charset="utf-8" src="'.HTTP_BASE_URL.'/'.$val.'"></script>';    
                             }
                             else
                             {
@@ -73,9 +73,17 @@ class HeadMod extends PandaModController
         {
             $this->other[] = $val;
         }
-        function script($val)
+        function script($val,$key=null)
         {
-            $this->script[] = $val;
+            if($key == null)
+            {
+                $this->script[] = $val;
+            }
+            else
+            {
+                 $this->script[$key] = $val;
+            
+            }
         }
         
         

@@ -21,10 +21,12 @@ define('USER_CONFIG_DIR',APP_DIR.'/config');
 if($_SERVER['HTTPS'] != 'on')
 {
     define('HTTP_BASE_URL','http://'.$_SERVER['HTTP_HOST'].''.WEB_PATH);
+    define('PROTOCOL','https');
 }
 else
 {
     define('HTTP_BASE_URL','https://'.$_SERVER['HTTP_HOST'].''.WEB_PATH);
+    define('PROTOCOL','https');
 }
 
 define('HTTP_LAYOUT_URL',HTTP_BASE_URL.'/layout');

@@ -31,6 +31,22 @@ class PandaRouter
 	    header("Location: ".$url);
 	    die();
 	}
+        
+        function redirectPermanent($url)
+        {
+            header("Location: ".$url, true, 301);
+
+	    die();
+        }
+        function redirectPermanentReplace($replace,$replaceto = "")
+        {
+            $url = str_replace($replace,$replaceto, HTTP_BASE_URL.$_SERVER['REQUEST_URI']);
+            
+            
+            header("Location: ".$url, true, 301);
+
+	    die();
+        }
 
 	function get()
 	{
